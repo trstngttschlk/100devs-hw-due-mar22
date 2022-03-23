@@ -90,18 +90,67 @@ That is: removes all dashes, each word after dash becomes uppercased.
 // alert(usersMapped[0].fullName)
 
 // Sort users by age
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
 
-let arr = [ pete, john, mary ];
+// let arr = [ pete, john, mary ];
 
-function sortByAge(array){
-    array.sort(function(x,y){return x.age-y.age;})
-}
+// function sortByAge(array){
+//     array.sort(function(x,y){return x.age-y.age;})
+// }
 
-sortByAge(arr)
+// sortByAge(arr)
 
-alert(arr[0].name); // John
-alert(arr[1].name); // Mary
-alert(arr[2].name); // Pete
+// alert(arr[0].name); // John
+// alert(arr[1].name); // Mary
+// alert(arr[2].name); // Pete
+
+// Shuffle an array
+// let arr = [1, 2, 3];
+
+// function shuffle(array){
+//     array.map(x=> array.indexOf(x) == x[Math.floor(Math.random()*3)])
+//     return array
+// }
+
+// console.log(shuffle(arr))
+
+// Get average age
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 29 };
+
+// let arr = [ john, pete, mary ];
+
+// // gets array of just ages [25, 30, 29]
+// let ages = arr.map(x=>x.age) 
+// // add up all the ages
+// let sum = 0;
+// for (i=0;i<ages.length;i++){
+//     sum += ages[i]
+// }
+// let averageAge = sum / ages.length
+
+// console.log(averageAge)
+
+// Filter unique array members
+// function unique(arr) {
+//     arr.reduce((prev,string)=>{if(prev === string){string.pop()}})
+//     return arr
+//   }
+  
+//   let strings = ["Hare", "Krishna", "Hare", "Krishna",
+//     "Krishna", "Krishna", "Hare", "Hare", ":-O"
+//   ];
+  
+//   alert( unique(strings) ); // Hare, Krishna, :-O
+
+// Create keyed object from array
+let users = [
+    {id: 'john', name: "John Smith", age: 20},
+    {id: 'ann', name: "Ann Smith", age: 24},
+    {id: 'pete', name: "Pete Peterson", age: 31},
+  ];
+  
+  let usersById = groupById(users);
